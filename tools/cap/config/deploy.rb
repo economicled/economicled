@@ -25,7 +25,7 @@ set :linked_dirs, [
 ]
 
 set :magento_deploy_languages, ["en_US", "fr_FR", "nl_NL", "es_ES"]
-set :magento_deploy_themes, ["bs_cogito/bs_cogito1", "bs_cogito/bs_cogito2", "bs_cogito/bs_cogito3", "bs_cogito/bs_cogito4", "bs_cogito/bs_cogito5", "Magento/backend"]
+# set :magento_deploy_themes, ["bs_cogito/bs_cogito1", "bs_cogito/bs_cogito2", "bs_cogito/bs_cogito3", "bs_cogito/bs_cogito4", "bs_cogito/bs_cogito5", "Magento/backend"]
 set :magento_deploy_production, true
 set :magento_deploy_chmod_d, "2775"
 set :magento_deploy_chmod_f, "0755"
