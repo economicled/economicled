@@ -16,8 +16,6 @@ set :linked_dirs, [
   'pub/sitemaps',
   'var/backups',
   'var/composer_home',
-  'var/importexport',
-  'var/import_history',
   'var/log',
   'var/session',
   'var/tmp'
