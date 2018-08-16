@@ -15,7 +15,6 @@ set :linked_dirs, [
   'pub/media',
   'pub/sitemaps',
   'var/backups',
-  'lib/web/rokanthemes',
   'var/composer_home',
   'var/importexport',
   'var/import_history',
