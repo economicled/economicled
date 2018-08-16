@@ -9,7 +9,7 @@
 server '51.15.223.238', user: 'hello_optical', roles: %w{app db web}
 
 set :deploy_to, '/home/lightintheled/www'
-set :branch, proc { `git rev-parse --abbrev-ref production`.chomp }
+set :branch, proc { `git rev-parse --abbrev-ref master`.chomp }
 
 
 # role-based syntax
