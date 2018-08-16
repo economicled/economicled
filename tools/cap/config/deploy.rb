@@ -4,6 +4,9 @@ lock "~> 3.11.0"
 set :application, "lightintheled.fr"
 set :repo_url, "git@github.com:Eth3rnit3/lightintheled.git"
 
+set :magento_auth_public_key, '567b0a01e7f41bd0aa7d06181b50dcbd'
+set :magento_auth_private_key, '9c3e1273a0a0da9277f456c38026e0f4'
+
 set :linked_files, [
   'app/etc/env.php',
   'app/etc/config.local.php',
