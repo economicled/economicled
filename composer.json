@@ -9,7 +9,8 @@
     ],
     "require": {
         "magento/product-community-edition": "2.2.5",
-        "composer/composer": "@alpha"
+        "composer/composer": "@alpha",
+        "mageplaza/magento-2-french-language-pack": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "~6.2.0",
