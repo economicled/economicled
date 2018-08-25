@@ -99,6 +99,7 @@ log/*
 !/generated/.htaccess
 
 /pub/media/*.*
+/pub/media/blog/cache/
 !/pub/media/.htaccess
 /pub/media/attribute/*
 !/pub/media/attribute/.htaccess
