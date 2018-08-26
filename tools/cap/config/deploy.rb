@@ -25,7 +25,7 @@ set :linked_dirs, [
 ]
 
 set :magento_deploy_languages, ["en_US", "fr_FR"]
-set :magento_deploy_themes, ["Codazon/fastest"]
+set :magento_deploy_themes, ["Codazon/fastest", "Magento/backend"]
 set :magento_deploy_production, true
 set :magento_deploy_chmod_d, "2775"
 set :magento_deploy_chmod_f, "0755"
