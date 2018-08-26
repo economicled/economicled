@@ -14,6 +14,7 @@ set :linked_files, [
 
 set :linked_dirs, [
   'pub/media',
+  'pub/static/frontend/Codazon',
   'pub/sitemaps',
   'var/backups',
   'var/composer_home',
