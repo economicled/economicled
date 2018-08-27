@@ -32,7 +32,7 @@ bin/magento setup:install \
 # Déploiement
 `ssh-add ~/.ssh/id_rsa`
 puis
-`cd tools/cap && cap staging deploy`
+`cd tools/cap && cap production deploy`
 # Dev frontend
 Exécute :
 ```
