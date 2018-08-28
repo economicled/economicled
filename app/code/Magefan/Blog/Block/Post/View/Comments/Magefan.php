@@ -14,7 +14,7 @@ use Magefan\Blog\Model\Config\Source\CommetType;
 /**
  * Blog post Magefan comments block
  */
-class Magefan extends \Magefan\Blog\Block\Post\View\Comments
+class Magefan extends \Magefan\Blog\Block\Post\View\Comments implements \Magento\Framework\DataObject\IdentityInterface
 {
     /**
      * @var string
@@ -154,7 +154,7 @@ class Magefan extends \Magefan\Blog\Block\Post\View\Comments
     public function canPost()
     {
         return $this->_scopeConfig->getValue(
-            \Magefan\Blog\Helper\Config::GUEST_COMMENT,
+            \Magefan\Blog\Model\Config::GUEST_COMMENT,
             ScopeInterface::SCOPE_STORE
         ) || $this->getCustomerSession()->getCustomerGroupId();
     }
@@ -167,7 +167,7 @@ class Magefan extends \Magefan\Blog\Block\Post\View\Comments
     public function getNumberOfComments()
     {
         return $this->_scopeConfig->getValue(
-            \Magefan\Blog\Helper\Config::NUMBER_OF_COMMENTS,
+            \Magefan\Blog\Model\Config::NUMBER_OF_COMMENTS,
             ScopeInterface::SCOPE_STORE
         );
     }
@@ -179,5 +179,20 @@ class Magefan extends \Magefan\Blog\Block\Post\View\Comments
     public function getFormUrl()
     {
         return $this->getUrl('blog/comment/post');
+    }
+
+    /**
+     * Retrieve identities
+     *
+     * @return string
+     */
+    public function getIdentities()
+    {
+        $identities = [];
+        foreach ($this->getCommentsCollection() as $item) {
+            $identities = array_merge($identities, $item->getIdentities());
+        }
+
+        return array_unique($identities);
     }
 }

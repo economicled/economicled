@@ -5,6 +5,9 @@
 
 This Magento 2 Blog module allows you to create a full-fledged blog on your [Magento 2](http://magento.com/) Store.
 
+## Requirements
+  * Magento Community Edition 2.1.x-2.2.x or Magento Enterprise Edition 2.1.x-2.2.x
+  * **IMPORTANT!** [Magefan Community Extension](https://github.com/magefan/module-community) >= 2.0.1 . Please install this extension first if you use installation via FTP.
 
 ## Features
   * Unlimited blog posts, multi-level categories, and tags
@@ -89,38 +92,10 @@ Try out our open demo and if you like our extension **please give us some star o
 ## Online Documentation
 http://magefan.com/docs/magento-2-blog/
 
-## Requirements
-  * Magento Community Edition 2.1.x-2.2.x or Magento Enterprise Edition 2.1.x-2.2.x
 
-## Installation Method 1 - Installing via composer
-  * Open command line
-  * Using command "cd" navigate to your magento2 root directory
-  * Run commands:
-```
-composer require magefan/module-blog
-php bin/magento setup:upgrade
-php bin/magento setup:di:compile
-php bin/magento setup:static-content:deploy
-```
-  * If you are using Magento 2.2.x please run the command: 
-```
-composer require magefan/module-blog-m22
-```
+## Installation Instruction
+https://magefan.com/blog/magneto2-blog-extension-installation/
 
-  
-
-## Installation Method 2 - Installing using archive
-  * Download [ZIP Archive](https://github.com/magefan/module-blog/archive/master.zip)
-  * Extract files
-  * In your Magento 2 root directory create folder app/code/Magefan/Blog
-  * Copy files and folders from archive to that folder
-  * In command line, using "cd", navigate to your Magento 2 root directory
-  * Run commands:
-```
-php bin/magento setup:upgrade
-php bin/magento setup:di:compile
-php bin/magento setup:static-content:deploy
-```
 
 ## Support
 If you have any issues, please [contact us](mailto:support@magefan.com)
@@ -142,6 +117,6 @@ The code is licensed under [Open Software License ("OSL") v. 3.0](http://opensou
   * [Magento 2 Login As Customer Extension](https://magefan.com/login-as-customer-magento-2-extension)
   * [Magento 2 Conflict Detector Extension](https://magefan.com/magento2-conflict-detector)
   * [Magento 2 Lazy Load Extension](https://github.com/magefan/module-lazyload)
-  * [Magento 2 Rocket JavaScript Extension](https://github.com/magefan/module-rocketjavascript)
-  * [Magento 2 CLI Extension](https://github.com/magefan/module-cli)
+  * [Magento 2 Rocket JavaScript Extension](https://magefan.com/rocket-javascript-deferred-javascript)
+  * [Magento 2 CLI Extension](https://magefan.com/magento2-cli-extension)
   
