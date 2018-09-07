@@ -16,7 +16,7 @@ bin/magento setup:install \
     --db-user=root \
     --db-password=root \
     --backend-frontname=admin \
-    --base-url=http://dev.digimage.com/ \
+    --base-url=http://127.0.0.1:8080/ \
     --language=fr_FR \
     --timezone=Europe/Paris \
     --currency=EUR \
@@ -33,38 +33,6 @@ bin/magento setup:install \
 `ssh-add ~/.ssh/id_rsa`
 puis
 `cd tools/cap && cap production deploy`
-# Dev frontend
-Exécute :
-```
-mv package.json.sample package.json
-mv Gruntfile.js.sample Gruntfile.js
-```
-Add this key to `dev/tools/grunt/configs/themes.js`
-```
-ethan: {
-    area: 'frontend',
-    name: 'Mgs/ethan',
-    locale: 'fr_FR',
-    files: [
-        'css/theme',
-        'css/theme_default',
-        'css/responsive',
-        'css/menu',
-        'css/email'
-    ],
-    dsl: 'less'
-}
-```
-Run :
-```
-grunt clean:ethan
-grunt exec:ethan
-grunt less:ethan
-grunt watch
-```
-Enable livereload on your browser :
-http://livereload.com/
-Enable it and when you modify a less file, it should refresh
 
 # Dev payment
 If you dump a production database for development, the paypal credentials are invalid for use in sandbox
