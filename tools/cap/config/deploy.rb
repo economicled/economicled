@@ -2,7 +2,7 @@
 lock "~> 3.11.0"
 
 set :application, "lightintheled.fr"
-set :repo_url, "git@github.com:Eth3rnit3/lightintheled.git"
+set :repo_url, "git@github.com:economicled/economicled.git"
 
 set :linked_files, [
   'app/etc/env.php',
