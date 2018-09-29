@@ -12,7 +12,8 @@
         "composer/composer": "@alpha",
         "mageplaza/magento-2-french-language-pack": "dev-master",
         "mageplaza/module-smtp": "^1.2",
-        "adfab/m2-module-gdpr": "^1.0"
+        "adfab/m2-module-gdpr": "^1.0",
+        "mageplaza/module-gdpr": "^1.2"
     },
     "require-dev": {
         "phpunit/phpunit": "~6.2.0",
