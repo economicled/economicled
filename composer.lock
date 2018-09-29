@@ -4,8 +4,51 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "87939067d7a16e1105280c6b974719bd",
+    "content-hash": "a3a16dca74ee162318b73e17e3c9fe12",
     "packages": [
+        {
+            "name": "adfab/m2-module-gdpr",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AdFabConnect/magento2gdpr.git",
+                "reference": "a1aa0692ab16ca2ae5613ebe7ced640fc7ffed82"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AdFabConnect/magento2gdpr/zipball/a1aa0692ab16ca2ae5613ebe7ced640fc7ffed82",
+                "reference": "a1aa0692ab16ca2ae5613ebe7ced640fc7ffed82",
+                "shasum": ""
+            },
+            "require": {
+                "fzaninotto/faker": "*",
+                "magento/module-customer": "*",
+                "magento/module-quote": "*",
+                "magento/module-sales": "*",
+                "sabas/edifact": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Adfab\\Gdpr\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adfab Dev Team",
+                    "email": "dev@adfab.fr"
+                }
+            ],
+            "description": "GDPR compatibility",
+            "time": "2018-06-03T07:24:48+00:00"
+        },
         {
             "name": "amzn/amazon-pay-and-login-magento-2-module",
             "version": "2.0.12",
@@ -662,6 +705,56 @@
                 }
             ],
             "description": "dotmailer integration for magento 2"
+        },
+        {
+            "name": "fzaninotto/faker",
+            "version": "v1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fzaninotto/Faker.git",
+                "reference": "f72816b43e74063c8b10357394b6bba8cb1c10de"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/f72816b43e74063c8b10357394b6bba8cb1c10de",
+                "reference": "f72816b43e74063c8b10357394b6bba8cb1c10de",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3.3 || ^7.0"
+            },
+            "require-dev": {
+                "ext-intl": "*",
+                "phpunit/phpunit": "^4.8.35 || ^5.7",
+                "squizlabs/php_codesniffer": "^1.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Faker\\": "src/Faker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "François Zaninotto"
+                }
+            ],
+            "description": "Faker is a PHP library that generates fake data for you.",
+            "keywords": [
+                "data",
+                "faker",
+                "fixtures"
+            ],
+            "time": "2018-07-12T10:23:15+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -7165,6 +7258,60 @@
             "time": "2018-01-20T00:28:24+00:00"
         },
         {
+            "name": "sabas/edifact",
+            "version": "0.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-edifact/edifact.git",
+                "reference": "d2412113f58ed79ff01e09006a82472ec9cf3cac"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-edifact/edifact/zipball/d2412113f58ed79ff01e09006a82472ec9cf3cac",
+                "reference": "d2412113f58ed79ff01e09006a82472ec9cf3cac",
+                "shasum": ""
+            },
+            "require-dev": {
+                "php-edifact/edifact-mapping": "dev-master",
+                "phpunit/phpunit": "4.1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "EDI\\": "src/EDI/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Stefano Sabatini",
+                    "email": "sabas88@gmail.com",
+                    "homepage": "http://stefanosabatini.eu",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Uldis Nelsons",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Emil Vikström",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Tools in PHP for UN/EDIFACT",
+            "homepage": "https://github.com/php-edifact/edifact",
+            "keywords": [
+                "container",
+                "edi",
+                "edifact",
+                "message"
+            ],
+            "time": "2018-03-22T13:31:37+00:00"
+        },
+        {
             "name": "seld/cli-prompt",
             "version": "1.0.3",
             "source": {
@@ -10325,6 +10472,47 @@
                 "security"
             ],
             "time": "2018-02-14T22:37:14+00:00"
+        },
+        {
+            "name": "mageplaza/module-gdpr",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mageplaza/magento-2-gdpr.git",
+                "reference": "73fb55118ab2fc78fde4421d75428e2a56a86d10"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mageplaza/magento-2-gdpr/zipball/73fb55118ab2fc78fde4421d75428e2a56a86d10",
+                "reference": "73fb55118ab2fc78fde4421d75428e2a56a86d10",
+                "shasum": ""
+            },
+            "require": {
+                "mageplaza/module-core": "^1.3.11"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Mageplaza\\Gdpr\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Mageplaza",
+                    "email": "support@mageplaza.com",
+                    "homepage": "https://www.mageplaza.com",
+                    "role": "Technical Support"
+                }
+            ],
+            "description": "GDPR for Magento 2",
+            "time": "2018-06-14T06:51:34+00:00"
         },
         {
             "name": "myclabs/deep-copy",
