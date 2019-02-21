@@ -6560,16 +6560,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mageplaza/magento-2-french-language-pack.git",
-                "reference": "472c494b5b282de33c09f92d9400d1ea8f0079f9"
+                "reference": "347f7a04e994bb1ac94911b84635de3fcf256bb7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mageplaza/magento-2-french-language-pack/zipball/472c494b5b282de33c09f92d9400d1ea8f0079f9",
-                "reference": "472c494b5b282de33c09f92d9400d1ea8f0079f9",
+                "url": "https://api.github.com/repos/mageplaza/magento-2-french-language-pack/zipball/347f7a04e994bb1ac94911b84635de3fcf256bb7",
+                "reference": "347f7a04e994bb1ac94911b84635de3fcf256bb7",
                 "shasum": ""
             },
             "require": {
-                "mageplaza/module-core": "^1.3.9|dev-master"
+                "mageplaza/module-core": "^1.3.13"
             },
             "type": "magento2-language",
             "autoload": {
@@ -6591,7 +6591,7 @@
             ],
             "description": "French language package for Magento 2",
             "homepage": "https://www.mageplaza.com",
-            "time": "2018-06-20T07:15:42+00:00"
+            "time": "2019-02-08T09:04:25+00:00"
         },
         {
             "name": "mageplaza/module-core",
