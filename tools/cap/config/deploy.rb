@@ -23,8 +23,8 @@ set :linked_dirs, [
   'var/tmp'
 ]
 
-set :magento_deploy_languages, ["en_US", "fr_FR"]
-set :magento_deploy_themes, ["Codazon/fastest_fashion","Codazon/fastest_sportswear","Codazon/fastest_hightech","Codazon/fastest_bigmarket", "Magento/backend"]
+set :magento_deploy_languages, ["fr_FR"]
+set :magento_deploy_themes, ["Codazon/fastest_hightech"]
 set :magento_deploy_production, true
 set :magento_deploy_chmod_d, "2775"
 set :magento_deploy_chmod_f, "0755"
